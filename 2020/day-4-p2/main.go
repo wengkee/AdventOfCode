@@ -11,17 +11,6 @@ import (
 	"unicode"
 )
 
-type passport struct {
-	byr string //(Birth Year)
-	iyr string //(Issue Year)
-	eyr string //(Expiration Year)
-	hgt string //(Height)
-	hcl string //(Hair Color)
-	ecl string //(Eye Color)
-	pid string //(Passport ID)
-	cid string //(Country ID)
-}
-
 var eyesColorList []string = []string{
 	"amb", "blu", "brn", "gry", "grn", "hzl", "oth",
 }
@@ -35,9 +24,6 @@ func main() {
 	defer f.Close()
 
 	line := bufio.NewScanner(f)
-
-	// p := passport{}
-	// var listOfPassport []passport
 
 	m := make(map[string]string)
 
@@ -61,14 +47,11 @@ func main() {
 				return !unicode.IsLetter(c) && !unicode.IsNumber(c) && c != '#'
 			}
 
-			// fmt.Println(line.Text())
 			lst := strings.FieldsFunc(line.Text(), c)
-			// fmt.Printf("Fields are: %q", lst)
 
 			for len(lst) > 0 {
 				var elem, value string
 				elem, lst = lst[0], lst[1:] // popping
-				// fmt.Println(elem)
 
 				if stringInSlice(passportList, elem) {
 					value, lst = lst[0], lst[1:] // popping
@@ -77,13 +60,11 @@ func main() {
 
 			}
 		} else {
-			// fmt.Println("###################################################################################")
 
 			if isValidPassport(m) {
 				validPassport++
 			}
 
-			// fmt.Println(m)
 			m = make(map[string]string)
 		}
 
