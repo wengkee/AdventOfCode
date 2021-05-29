@@ -1,17 +1,21 @@
 package com.wengkee.adventofcode;
 
 import com.wengkee.adventofcode.day7.BagProcessor;
-import com.wengkee.adventofcode.util.Challenge;
+import com.wengkee.adventofcode.util.ChallengeManager;
 
 import java.io.File;
 
 public class ChallengeRun {
     public static void main(String[] args) {
-        Challenge c7p1 = new BagProcessor(7,1, getFile("d7.txt"));
-        c7p1.run();
+
+        ChallengeManager cm = new ChallengeManager();
+
+        cm.addChallenge(new BagProcessor(7,1, getResourceFile("d7.txt")));
+        cm.addChallenge(new BagProcessor(7,2, getResourceFile("d7.txt")));
+        cm.runChallenge(7,1);
     }
 
-    private static File getFile(String filename){
+    private static File getResourceFile(String filename){
 
         if ( filename != null ){
             return new File (ChallengeRun.class.getClassLoader().getResource(filename).getFile());
