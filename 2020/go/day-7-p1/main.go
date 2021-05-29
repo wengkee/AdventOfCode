@@ -30,12 +30,13 @@ func main() {
 
 			words := strings.FieldsFunc(line, c)
 
-			// inner: []string //outer
+			// child: []string parents
 			var parent, child string
 			var parentFound bool = false
-			var findParentMap map[string][]string
+			var findParentMap map[string][]string = []string{}
 
 			for i, v := range words {
+
 				if strings.HasPrefix(v, "bag") {
 
 					if !parentFound {
@@ -58,11 +59,14 @@ func main() {
 							}
 
 							parents = append(parents, parent)
-
+							findParentMap[child] = parents
 						}
 
 					}
 				}
+
+				fmt.Println(findParentMap)
+
 			}
 
 			// fmt.Println(m)
