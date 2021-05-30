@@ -4,12 +4,16 @@ import com.wengkee.adventofcode.util.Challenge;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class BagProcessor extends Challenge {
 
     protected ArrayList<Bag> bagList;
+    private static final String SHINY_GOLD_BAG = "shiny gold";
 
     public BagProcessor(int day, int part, File input) {
         super(day, part, input);
@@ -18,11 +22,15 @@ public class BagProcessor extends Challenge {
 
     @Override
     public void run() {
+
+        for ( String line : getInputData() ){
+            process(line);
+        }
+
         if ( getPart() == 1){
-            for ( String line : getInputData() ){
-                process(line);
-            }
-            findAllParents("shiny gold");
+            findNumOfParents(SHINY_GOLD_BAG);
+        } else if ( getPart() == 2 ){
+            findNumOfChildBags(SHINY_GOLD_BAG);
         }
     }
 
@@ -31,6 +39,7 @@ public class BagProcessor extends Challenge {
         String[] parts = rule.split("contain");
         String color = getBagColor(parts[0]);
         Bag bag = findBag(color);
+
         if (bag == null){
             bag = new Bag(color);
         }
@@ -83,18 +92,11 @@ public class BagProcessor extends Challenge {
         return null;
     }
 
-    public void printAllBags(){
-        for (Bag currBag : this.bagList) {
-            currBag.printBag();
-            System.out.println("\n");
-        }
-    }
+    private void findNumOfParents(String color){
 
-    public void findAllParents(String color){
-        System.out.println("================= finding ==============");
         Bag bag = findBag(color);
         if( bag != null){
-            ArrayList<Bag> result = new ArrayList<>();
+            Set<Bag> result = new HashSet<>();
             traverseParents(bag, result);
 
             System.out.println("Answer: " + result.size());
@@ -102,16 +104,36 @@ public class BagProcessor extends Challenge {
 
     }
 
-    private void traverseParents(Bag bag, ArrayList<Bag> result){
+    private void traverseParents(Bag bag, Set<Bag> result){
         if (bag.getParents() != null ){
             for (Bag parentBag : bag.getParents() ){
-
-                if (!result.contains(parentBag)){
-                    result.add(parentBag);
-                }
-
+                result.add(parentBag);
                 traverseParents(parentBag, result);
             }
         }
     }
+
+    private void findNumOfChildBags(String color){
+
+        Bag bag = findBag(color);
+
+        if( bag != null){
+
+            System.out.println("Answer: " + (traverseChildBags(bag) -1));
+        }
+    }
+
+    private int traverseChildBags(Bag bag){
+
+        int numOfBags = 1;
+
+        for (Map.Entry<Bag, Integer> childBag : bag.getChildBags().entrySet() ){
+
+            numOfBags += childBag.getValue() * traverseChildBags(childBag.getKey());
+        }
+
+        return numOfBags;
+
+    }
+
 }

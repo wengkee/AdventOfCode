@@ -29,7 +29,7 @@
    - day 24
    - day 25
 
-2. [Java](2020/java/src/com/wengkee/adventofcode)
+2. [Java11](2020/java/src/com/wengkee/adventofcode)
    - day 1 
    - day 2 
    - day 3 
