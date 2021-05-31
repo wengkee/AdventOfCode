@@ -13,10 +13,10 @@ public abstract class Challenge {
     private int part;
     private File input;
 
-    protected Challenge(int day, int part, File input) {
+    protected Challenge(int day, int part, String input) {
         this.day = day;
         this.part = part;
-        this.input = input;
+        this.input = new File (getClass().getClassLoader().getResource(input).getFile());
     }
 
     public int getDay() {

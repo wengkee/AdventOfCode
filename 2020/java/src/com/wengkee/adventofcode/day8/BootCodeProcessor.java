@@ -2,7 +2,6 @@ package com.wengkee.adventofcode.day8;
 
 import com.wengkee.adventofcode.util.Challenge;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +13,7 @@ public class BootCodeProcessor extends Challenge {
 
     List<BootCode> bootCodeList;
 
-    public BootCodeProcessor(int day, int part, File input) {
+    public BootCodeProcessor(int day, int part, String input) {
         super(day, part, input);
         bootCodeList = new ArrayList<>();
     }
@@ -47,6 +46,8 @@ public class BootCodeProcessor extends Challenge {
                 bootCode.setType(NOP);
             } else if (bootCode.getType().equals(NOP)){
                 bootCode.setType(JMP);
+            } else {
+                continue;
             }
 
             bootCodeList.set(i, bootCode);

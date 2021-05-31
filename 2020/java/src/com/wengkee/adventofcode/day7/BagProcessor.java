@@ -2,7 +2,6 @@ package com.wengkee.adventofcode.day7;
 
 import com.wengkee.adventofcode.util.Challenge;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Map;
@@ -15,7 +14,7 @@ public class BagProcessor extends Challenge {
     protected ArrayList<Bag> bagList;
     private static final String SHINY_GOLD_BAG = "shiny gold";
 
-    public BagProcessor(int day, int part, File input) {
+    public BagProcessor(int day, int part, String input) {
         super(day, part, input);
         this.bagList  = new ArrayList<>();
     }
