@@ -1,4 +1,4 @@
-package com.wengkee.adventofcode.day7;
+package com.wengkee.adventofcode.y2020.day7;
 
 import java.util.ArrayList;
 import java.util.HashMap;
