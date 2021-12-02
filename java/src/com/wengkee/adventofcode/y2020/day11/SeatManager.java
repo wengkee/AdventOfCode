@@ -1,4 +1,4 @@
-package com.wengkee.adventofcode.day11;
+package com.wengkee.adventofcode.y2020.day11;
 
 import com.wengkee.adventofcode.util.Challenge;
 
@@ -9,8 +9,8 @@ public class SeatManager extends Challenge {
 
     List<List<Seat>> seatPlan;
 
-    public SeatManager(int day, int part, String input) {
-        super(day, part, input);
+    public SeatManager(int year, int day, int part, String input) {
+        super(year, day, part, input);
         seatPlan = new ArrayList<>();
     }
 

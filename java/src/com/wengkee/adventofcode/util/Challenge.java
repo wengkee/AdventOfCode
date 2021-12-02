@@ -9,16 +9,19 @@ import java.util.List;
 
 public abstract class Challenge {
 
-    private int day;
-    private int part;
+    private int year, day, part;
     private File input;
 
-    protected Challenge(int day, int part, String input) {
+    protected Challenge(int year, int day, int part, String input) {
+        this.year = year;
         this.day = day;
         this.part = part;
         this.input = new File (getClass().getClassLoader().getResource(input).getFile());
     }
 
+    public int getYear() {
+        return year;
+    }
     public int getDay() {
         return day;
     }

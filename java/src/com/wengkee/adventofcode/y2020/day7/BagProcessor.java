@@ -1,4 +1,4 @@
-package com.wengkee.adventofcode.day7;
+package com.wengkee.adventofcode.y2020.day7;
 
 import com.wengkee.adventofcode.util.Challenge;
 
@@ -14,8 +14,8 @@ public class BagProcessor extends Challenge {
     protected ArrayList<Bag> bagList;
     private static final String SHINY_GOLD_BAG = "shiny gold";
 
-    public BagProcessor(int day, int part, String input) {
-        super(day, part, input);
+    public BagProcessor(int year, int day, int part, String input) {
+        super(year, day, part, input);
         this.bagList  = new ArrayList<>();
     }
 

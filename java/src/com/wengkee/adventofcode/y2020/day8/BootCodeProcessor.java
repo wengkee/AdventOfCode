@@ -1,4 +1,4 @@
-package com.wengkee.adventofcode.day8;
+package com.wengkee.adventofcode.y2020.day8;
 
 import com.wengkee.adventofcode.util.Challenge;
 
@@ -13,8 +13,8 @@ public class BootCodeProcessor extends Challenge {
 
     List<BootCode> bootCodeList;
 
-    public BootCodeProcessor(int day, int part, String input) {
-        super(day, part, input);
+    public BootCodeProcessor(int year, int day, int part, String input) {
+        super(year, day, part, input);
         bootCodeList = new ArrayList<>();
     }
 

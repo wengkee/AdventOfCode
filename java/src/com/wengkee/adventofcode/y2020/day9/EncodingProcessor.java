@@ -1,4 +1,4 @@
-package com.wengkee.adventofcode.day9;
+package com.wengkee.adventofcode.y2020.day9;
 
 import com.wengkee.adventofcode.util.Challenge;
 
@@ -9,8 +9,8 @@ public class EncodingProcessor extends Challenge {
 
     List<Long> numberList = new ArrayList<>();
 
-    public EncodingProcessor(int day, int part, String input) {
-        super(day, part, input);
+    public EncodingProcessor(int year, int day, int part, String input) {
+        super(year, day, part, input);
     }
 
     @Override
