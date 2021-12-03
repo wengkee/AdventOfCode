@@ -7,6 +7,7 @@ import com.wengkee.adventofcode.y2020.day9.EncodingProcessor;
 import com.wengkee.adventofcode.util.ChallengeManager;
 import com.wengkee.adventofcode.y2021.day1.SonarSweeperProcessor;
 import com.wengkee.adventofcode.y2021.day2.Submarine;
+import com.wengkee.adventofcode.y2021.day3.Diagnostic;
 
 public class ChallengeRun {
     public static void main(String[] args) {
@@ -24,8 +25,10 @@ public class ChallengeRun {
         cm.addChallenge(new SonarSweeperProcessor(2021, 1,2, "2021-d1.txt"));
         cm.addChallenge(new Submarine(2021, 2,1, "2021-d2.txt"));
         cm.addChallenge(new Submarine(2021, 2,2, "2021-d2.txt"));
+        cm.addChallenge(new Diagnostic(2021, 3,1, "2021-d3.txt"));
+        cm.addChallenge(new Diagnostic(2021, 3,2, "2021-d3.txt"));
 
 //        cm.runChallenge(2020,7,1);
-        cm.runChallenge(2021,2,2);
+        cm.runChallenge(2021,3,2);
     }
 }
