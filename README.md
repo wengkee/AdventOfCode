@@ -35,9 +35,8 @@
 </details>
 
 <details>
-<summary>Java</summary>
-
-- [Java](java/src/com/wengkee/adventofcode/y2020)
+<summary>Java 11</summary>
+- [Java 11](java/src/com/wengkee/adventofcode/y2020)
    - day 1 
    - day 2 
    - day 3 
@@ -69,14 +68,14 @@
 ## [Year 2021](https://adventofcode.com/2021)
 
 <details>
-<summary>Java</summary>
+<summary>Java 11</summary>
 
-- [Java](2021/java/src/com/wengkee/adventofcode/y2021)
+- [Java 11](2021/java/src/com/wengkee/adventofcode/y2021)
   - day 1 * * 
-  - day 2
-  - day 3
-  - day 4
-  - day 5
+  - day 2 * *
+  - day 3 * *
+  - day 4 * *
+  - day 5 * *
   - day 6
   - day 7 
   - day 8 
