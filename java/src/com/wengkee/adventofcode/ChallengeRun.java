@@ -9,6 +9,7 @@ import com.wengkee.adventofcode.y2021.day1.SonarSweeperProcessor;
 import com.wengkee.adventofcode.y2021.day2.Submarine;
 import com.wengkee.adventofcode.y2021.day3.Diagnostic;
 import com.wengkee.adventofcode.y2021.day4.Bingo;
+import com.wengkee.adventofcode.y2021.day5.HydrothermalVent;
 
 public class ChallengeRun {
     public static void main(String[] args) {
@@ -36,9 +37,12 @@ public class ChallengeRun {
         cm.addChallenge(new Diagnostic(2021, 3,2, "2021-d3.txt"));
 
         cm.addChallenge(new Bingo(2021, 4,1, "2021-d4.txt"));
-        cm.addChallenge(new Bingo(2021, 4,2, "2021-d4.txt"));
+        cm.addChallenge(new Bingo(2021, 4,2, "2021-d4.txt"));;
 
-//        cm.runChallenge(2020,7,1);
-        cm.runChallenge(2021,4,2);
+        cm.addChallenge(new HydrothermalVent(2021, 5,1, "2021-d5.txt"));
+        cm.addChallenge(new HydrothermalVent(2021, 5,2, "2021-d5.txt"));
+
+        cm.runChallenge(2021,5,1);
+        cm.runChallenge(2021,5,2);
     }
 }

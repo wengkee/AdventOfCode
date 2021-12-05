@@ -1,6 +1,7 @@
 package com.wengkee.adventofcode.util;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class ChallengeManager {
@@ -30,11 +31,15 @@ public class ChallengeManager {
         System.out.println("Challenge from year " + year + " day " + day + " part " + part );
 
         if (challenge != null){
+            Date startDate = new Date();
             challenge.run();
+            Date endDate = new Date();
+            System.out.println(endDate.getTime() - startDate.getTime() + "ms");
         } else {
             System.out.println("Challenge not found, something is wrong! Please make sure the challenge is initialised. ");
         }
 
         System.out.println("##################################################");
+        System.out.println();
     }
 }
