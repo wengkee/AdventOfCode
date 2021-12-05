@@ -36,7 +36,6 @@
 
 <details>
 <summary>Java 11</summary>
-
 - [Java 11](java/src/com/wengkee/adventofcode/y2020)
    - day 1 
    - day 2 
