@@ -74,7 +74,7 @@
   - [day 3](java/src/com/wengkee/adventofcode/y2021/day3) * *
   - [day 4](java/src/com/wengkee/adventofcode/y2021/day4) * *
   - [day 5](java/src/com/wengkee/adventofcode/y2021/day5) * *
-  - day 6
+  - [day 6](java/src/com/wengkee/adventofcode/y2021/day6) * *
   - day 7 
   - day 8 
   - day 9 
