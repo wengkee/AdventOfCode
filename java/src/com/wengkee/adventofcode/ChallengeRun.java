@@ -11,6 +11,7 @@ import com.wengkee.adventofcode.y2021.day3.Diagnostic;
 import com.wengkee.adventofcode.y2021.day4.Bingo;
 import com.wengkee.adventofcode.y2021.day5.HydrothermalVent;
 import com.wengkee.adventofcode.y2021.day6.LanternFishColony;
+import com.wengkee.adventofcode.y2021.day7.CrabCannon;
 
 public class ChallengeRun {
     public static void main(String[] args) {
@@ -46,7 +47,10 @@ public class ChallengeRun {
         cm.addChallenge(new LanternFishColony(2021, 6,1, "2021-d6.txt"));
         cm.addChallenge(new LanternFishColony(2021, 6,2, "2021-d6.txt"));
 
-//        cm.runChallenge(2021,6,1);
-        cm.runChallenge(2021,6,2);
+        cm.addChallenge(new CrabCannon(2021, 7,1, "2021-d7.txt"));
+        cm.addChallenge(new CrabCannon(2021, 7,2, "2021-d7.txt"));
+
+//        cm.runChallenge(2021,7,1);
+        cm.runChallenge(2021,7,2);
     }
 }
