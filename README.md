@@ -7,16 +7,16 @@
 
 |Day         | Part One | Part Two |
 |------------|:---:|:---:|     
-| [day 1 ](go) |🌟 | 🌟 | 
-| [day 2 ](go) |🌟 | 🌟 | 
-| [day 3 ](go) |🌟 | 🌟 | 
-| [day 4 ](go) |🌟 | 🌟 | 
-| [day 5 ](go) |🌟 | 🌟 | 
-| [day 6 ](go) |🌟 | 🌟 | 
-| day 7      | 🚫 | 🚫 |
-| day 8      | 🚫 | 🚫 |
-| day 9      | 🚫 | 🚫 |
-| [day 10](go) |🌟 | 🌟 | 
+| ✔ [day 1 ](go) |🌟 | 🌟 | 
+| ✔ [day 2 ](go) |🌟 | 🌟 | 
+| ✔ [day 3 ](go) |🌟 | 🌟 | 
+| ✔ [day 4 ](go) |🌟 | 🌟 | 
+| ✔ [day 5 ](go) |🌟 | 🌟 | 
+| ✔ [day 6 ](go) |🌟 | 🌟 | 
+| ❌ day 7      | 🚫 | 🚫 |
+| ❌ day 8      | 🚫 | 🚫 |
+| ❌ day 9      | 🚫 | 🚫 |
+| ✔ [day 10](go) |🌟 | 🌟 | 
 
 </details>
 
@@ -25,9 +25,9 @@
 
 | Day  | Part One | Part Two |
 |---|:---:|:---:|                        
-|[day 7](java/src/com/wengkee/adventofcode/y2020/day7)| 🌟 | 🌟 | 
-|[day 8](java/src/com/wengkee/adventofcode/y2020/day8)| 🌟 | 🌟 | 
-|[day 9](java/src/com/wengkee/adventofcode/y2020/day9)| 🌟 | 🌟 | 
+| ✔ [day 7](java/src/com/wengkee/adventofcode/y2020/day7)| 🌟 | 🌟 | 
+| ✔ [day 8](java/src/com/wengkee/adventofcode/y2020/day8)| 🌟 | 🌟 | 
+| ✔ [day 9](java/src/com/wengkee/adventofcode/y2020/day9)| 🌟 | 🌟 | 
 
 </details>
 
