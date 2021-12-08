@@ -12,6 +12,7 @@ import com.wengkee.adventofcode.y2021.day4.Bingo;
 import com.wengkee.adventofcode.y2021.day5.HydrothermalVent;
 import com.wengkee.adventofcode.y2021.day6.LanternFishColony;
 import com.wengkee.adventofcode.y2021.day7.CrabCannon;
+import com.wengkee.adventofcode.y2021.day8.SevenSegment;
 
 public class ChallengeRun {
     public static void main(String[] args) {
@@ -39,7 +40,7 @@ public class ChallengeRun {
         cm.addChallenge(new Diagnostic(2021, 3,2, "2021-d3.txt"));
 
         cm.addChallenge(new Bingo(2021, 4,1, "2021-d4.txt"));
-        cm.addChallenge(new Bingo(2021, 4,2, "2021-d4.txt"));;
+        cm.addChallenge(new Bingo(2021, 4,2, "2021-d4.txt"));
 
         cm.addChallenge(new HydrothermalVent(2021, 5,1, "2021-d5.txt"));
         cm.addChallenge(new HydrothermalVent(2021, 5,2, "2021-d5.txt"));
@@ -50,7 +51,9 @@ public class ChallengeRun {
         cm.addChallenge(new CrabCannon(2021, 7,1, "2021-d7.txt"));
         cm.addChallenge(new CrabCannon(2021, 7,2, "2021-d7.txt"));
 
-//        cm.runChallenge(2021,7,1);
-        cm.runChallenge(2021,7,2);
+        cm.addChallenge(new SevenSegment(2021, 8,1, "2021-d8.txt"));
+        cm.addChallenge(new SevenSegment(2021, 8,2, "2021-d8"));
+
+        cm.runChallenge(2021,8,2);
     }
 }

@@ -7,16 +7,16 @@ This is my solution for Advent of Code.
 
 Java 11
 
-| Day                                                     | Part One | Part Two |
-|---------------------------------------------------------|:---:|:---:|
-| ✔ [Day 1](java/src/com/wengkee/adventofcode/y2021/day1) | 🌟 | 🌟 |
-| ✔ [day 1](java/src/com/wengkee/adventofcode/y2021/day1) | 🌟 | 🌟 |   
-| ✔ [day 2](java/src/com/wengkee/adventofcode/y2021/day2) | 🌟 | 🌟 |  
-| ✔ [day 3](java/src/com/wengkee/adventofcode/y2021/day3) | 🌟 | 🌟 |  
-| ✔ [day 4](java/src/com/wengkee/adventofcode/y2021/day4) | 🌟 | 🌟 |  
-| ✔ [day 5](java/src/com/wengkee/adventofcode/y2021/day5) | 🌟 | 🌟 |  
-| ✔ [day 6](java/src/com/wengkee/adventofcode/y2021/day6) | 🌟 | 🌟 |  
-| ✔ [day 7](java/src/com/wengkee/adventofcode/y2021/day7) | 🌟 | 🌟 |                 
+| Day                                                                          | Part One | Part Two |
+|------------------------------------------------------------------------------|:---:|:---:|
+| ✔ [Day 1 Sonar Sweeper](java/src/com/wengkee/adventofcode/y2021/day1)        | 🌟 | 🌟 |   
+| ✔ [day 2 Submarine](java/src/com/wengkee/adventofcode/y2021/day2)            | 🌟 | 🌟 |  
+| ✔ [day 3 Diagnostic](java/src/com/wengkee/adventofcode/y2021/day3)           | 🌟 | 🌟 |  
+| ✔ [day 4 Bingo](java/src/com/wengkee/adventofcode/y2021/day4)                | 🌟 | 🌟 |  
+| ✔ [day 5 Hydrothermal Vent](java/src/com/wengkee/adventofcode/y2021/day5)    | 🌟 | 🌟 |  
+| ✔ [day 6 Lantern Fish](java/src/com/wengkee/adventofcode/y2021/day6)         | 🌟 | 🌟 |  
+| ✔ [day 7 Crab](java/src/com/wengkee/adventofcode/y2021/day7)                 | 🌟 | 🌟 |           
+| ✔ [day 8 Seven Segment Digits](java/src/com/wengkee/adventofcode/y2021/day8) | 🌟 | 🌟 |                    
 
 
 ## [Year 2020](https://adventofcode.com/2020)
