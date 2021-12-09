@@ -59,6 +59,7 @@ public class ChallengeRun {
         cm.addChallenge(new SmokeBasin(2021, 9,1, "2021-d9.txt"));
         cm.addChallenge(new SmokeBasin(2021, 9,2, "2021-d9.txt"));
 
+        cm.runChallenge(2021,9,1);
         cm.runChallenge(2021,9,2);
     }
 }
