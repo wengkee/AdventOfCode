@@ -10,13 +10,13 @@ Java 11
 | Day                                                                          | Part One | Part Two |
 |------------------------------------------------------------------------------|:---:|:---:|
 | ✔ [Day 1 Sonar Sweeper](java/src/com/wengkee/adventofcode/y2021/day1)        | 🌟 | 🌟 |   
-| ✔ [day 2 Submarine](java/src/com/wengkee/adventofcode/y2021/day2)            | 🌟 | 🌟 |  
-| ✔ [day 3 Diagnostic](java/src/com/wengkee/adventofcode/y2021/day3)           | 🌟 | 🌟 |  
-| ✔ [day 4 Bingo](java/src/com/wengkee/adventofcode/y2021/day4)                | 🌟 | 🌟 |  
-| ✔ [day 5 Hydrothermal Vent](java/src/com/wengkee/adventofcode/y2021/day5)    | 🌟 | 🌟 |  
-| ✔ [day 6 Lantern Fish](java/src/com/wengkee/adventofcode/y2021/day6)         | 🌟 | 🌟 |  
-| ✔ [day 7 Crab](java/src/com/wengkee/adventofcode/y2021/day7)                 | 🌟 | 🌟 |           
-| ✔ [day 8 Seven Segment Digits](java/src/com/wengkee/adventofcode/y2021/day8) | 🌟 | 🌟 |                    
+| ✔ [day 2 Dive!](java/src/com/wengkee/adventofcode/y2021/day2)                | 🌟 | 🌟 |  
+| ✔ [day 3 Binary Diagnostic](java/src/com/wengkee/adventofcode/y2021/day3)           | 🌟 | 🌟 |  
+| ✔ [day 4 Giant Squid](java/src/com/wengkee/adventofcode/y2021/day4)                | 🌟 | 🌟 |  
+| ✔ [day 5 Hydrothermal Venture](java/src/com/wengkee/adventofcode/y2021/day5)    | 🌟 | 🌟 |  
+| ✔ [day 6 Lanternfish ](java/src/com/wengkee/adventofcode/y2021/day6)         | 🌟 | 🌟 |  
+| ✔ [day 7 The Treachery of Whales](java/src/com/wengkee/adventofcode/y2021/day7)                 | 🌟 | 🌟 |           
+| ✔ [day 8 Seven Segment Search ](java/src/com/wengkee/adventofcode/y2021/day8) | 🌟 | 🌟 |                    
 
 
 ## [Year 2020](https://adventofcode.com/2020)
@@ -24,29 +24,31 @@ Java 11
 
 <summary>Go</summary>
 
-| Day                  | Part One | Part Two |
-|----------------------|:---:|:---:|     
-| ✔ [day 1 ](go)       |🌟 | 🌟 | 
-| ✔ [day 2 ](go)       |🌟 | 🌟 | 
-| ✔ [day 3 ](go)       |🌟 | 🌟 | 
-| ✔ [day 4 ](go)       |🌟 | 🌟 | 
-| ✔ [day 5 ](go)       |🌟 | 🌟 | 
-| ✔ [day 6 ](go)       |🌟 | 🌟 | 
-| ❌ day 7              | 🚫 | 🚫 |
-| ❌ day 8              | 🚫 | 🚫 |
-| ❌ day 9              | 🚫 | 🚫 |
-| ✔ [day 10](go)       |🌟 | 🌟 | 
+| Day                                    | Part One | Part Two |
+|----------------------------------------|:---:|:---:|     
+| ✔ [day 1 Report Repair](go)            |🌟 | 🌟 | 
+| ✔ [day 2 Password Philosophy](go)      |🌟 | 🌟 | 
+| ✔ [day 3 Toboggan Trajectory](go)      |🌟 | 🌟 | 
+| ✔ [day 4 Passport Processing](go)      |🌟 | 🌟 | 
+| ✔ [day 5 Binary Boarding](go)          |🌟 | 🌟 | 
+| ✔ [day 6 Custom Customs](go)           |🌟 | 🌟 | 
+| ❌ day 7                                | 🚫 | 🚫 |
+| ❌ day 8                                | 🚫 | 🚫 |
+| ❌ day 9                                | 🚫 | 🚫 |
+| ✔ [day 10 Adapter Array](go)           |🌟 | 🌟 | 
 
 </details>
 
 <details>
 <summary>Java 11</summary>
 
-| Day                                                     | Part One | Part Two |
-|---------------------------------------------------------|:---:|:---:|                        
-| ✔ [day 7](java/src/com/wengkee/adventofcode/y2020/day7) | 🌟 | 🌟 | 
-| ✔ [day 8](java/src/com/wengkee/adventofcode/y2020/day8) | 🌟 | 🌟 | 
-| ✔ [day 9](java/src/com/wengkee/adventofcode/y2020/day9) | 🌟 | 🌟 | 
+| Day                                                                      | Part One | Part Two |
+|--------------------------------------------------------------------------|:---:|:---:|                        
+| ✔ [day 7 Handy Haversacks](java/src/com/wengkee/adventofcode/y2020/day7)                 | 🌟 | 🌟 | 
+| ✔ [day 8 Handheld Halting](java/src/com/wengkee/adventofcode/y2020/day8) | 🌟 | 🌟 | 
+| ✔ [day 9 Encoding Error](java/src/com/wengkee/adventofcode/y2020/day9)   | 🌟 | 🌟 | 
+| ❌ day 10                                                                 | 🚫 | 🚫 |
+| ✔ [day 11 Seat Planning](java/src/com/wengkee/adventofcode/y2020/day11)  | 🌟 | 🌟 | 
 
 </details>
 

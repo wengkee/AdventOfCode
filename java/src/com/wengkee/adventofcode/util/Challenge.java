@@ -11,12 +11,14 @@ public abstract class Challenge {
 
     private int year, day, part;
     private File input;
+    private List<String> dataList;
 
     protected Challenge(int year, int day, int part, String input) {
         this.year = year;
         this.day = day;
         this.part = part;
         this.input = new File (getClass().getClassLoader().getResource(input).getFile());
+        this.dataList = initInputData();
     }
 
     public int getYear() {
@@ -36,7 +38,7 @@ public abstract class Challenge {
 
     public abstract void run();
 
-    public List<String> getInputData() {
+    public List<String> initInputData() {
         List<String> data = new ArrayList<>();
 
         try {
@@ -50,8 +52,14 @@ public abstract class Challenge {
 
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (NullPointerException e){
+            System.out.println("File does not exists");
         }
 
         return data;
+    }
+
+    public List<String> getInputData() {
+        return this.dataList;
     }
 }

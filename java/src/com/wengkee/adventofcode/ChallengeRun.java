@@ -13,6 +13,7 @@ import com.wengkee.adventofcode.y2021.day5.HydrothermalVent;
 import com.wengkee.adventofcode.y2021.day6.LanternFishColony;
 import com.wengkee.adventofcode.y2021.day7.CrabCannon;
 import com.wengkee.adventofcode.y2021.day8.SevenSegment;
+import com.wengkee.adventofcode.y2021.day9.SmokeBasin;
 
 public class ChallengeRun {
     public static void main(String[] args) {
@@ -28,7 +29,8 @@ public class ChallengeRun {
         cm.addChallenge(new EncodingProcessor(2020, 9,1, "2020-d9.txt"));
         cm.addChallenge(new EncodingProcessor(2020, 9,2, "2020-d9.txt"));
 
-        cm.addChallenge(new SeatManager(2020, 11,1, "2020-d11-test.txt"));
+        cm.addChallenge(new SeatManager(2020, 11,1, "2020-d11.txt"));
+        cm.addChallenge(new SeatManager(2020, 11,2, "2020-d11.txt"));
 
         cm.addChallenge(new SonarSweeperProcessor(2021, 1,1, "2021-d1.txt"));
         cm.addChallenge(new SonarSweeperProcessor(2021, 1,2, "2021-d1.txt"));
@@ -52,8 +54,11 @@ public class ChallengeRun {
         cm.addChallenge(new CrabCannon(2021, 7,2, "2021-d7.txt"));
 
         cm.addChallenge(new SevenSegment(2021, 8,1, "2021-d8.txt"));
-        cm.addChallenge(new SevenSegment(2021, 8,2, "2021-d8"));
+        cm.addChallenge(new SevenSegment(2021, 8,2, "2021-d8.txt"));
 
-        cm.runChallenge(2021,8,2);
+        cm.addChallenge(new SmokeBasin(2021, 9,1, "2021-d9.txt"));
+        cm.addChallenge(new SmokeBasin(2021, 9,2, "2021-d9.txt"));
+
+        cm.runChallenge(2021,9,2);
     }
 }
