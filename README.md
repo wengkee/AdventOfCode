@@ -17,7 +17,8 @@ Java 11
 | ✔ [day 6 Lanternfish ](java/src/com/wengkee/adventofcode/y2021/day6)            | 🌟 | 🌟 |  
 | ✔ [day 7 The Treachery of Whales](java/src/com/wengkee/adventofcode/y2021/day7) | 🌟 | 🌟 |           
 | ✔ [day 8 Seven Segment Search ](java/src/com/wengkee/adventofcode/y2021/day8)   | 🌟 | 🌟 |                      
-| ✔ [day 9 Smoke Basin ](java/src/com/wengkee/adventofcode/y2021/day9)            | 🌟 | 🌟 |                          
+| ✔ [day 9 Smoke Basin ](java/src/com/wengkee/adventofcode/y2021/day9)            | 🌟 | 🌟 |                      
+| ✔ [day 10 Syntax Scoring ](java/src/com/wengkee/adventofcode/y2021/day10)       | 🌟 | 🌟 |                            
 
 
 ## [Year 2020](https://adventofcode.com/2020)
