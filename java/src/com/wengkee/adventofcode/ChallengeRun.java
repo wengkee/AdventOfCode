@@ -8,6 +8,7 @@ import com.wengkee.adventofcode.util.ChallengeManager;
 import com.wengkee.adventofcode.y2021.day1.SonarSweeperProcessor;
 import com.wengkee.adventofcode.y2021.day10.SyntaxScoring;
 import com.wengkee.adventofcode.y2021.day11.DumboOctopus;
+import com.wengkee.adventofcode.y2021.day12.PassagePathing;
 import com.wengkee.adventofcode.y2021.day2.Submarine;
 import com.wengkee.adventofcode.y2021.day3.Diagnostic;
 import com.wengkee.adventofcode.y2021.day4.Bingo;
@@ -67,6 +68,9 @@ public class ChallengeRun {
         cm.addChallenge(new DumboOctopus(2021, 11,1, "2021-d11.txt"));
         cm.addChallenge(new DumboOctopus(2021, 11,2, "2021-d11.txt"));
 
-        cm.runChallenge(2021,11,2);
+        cm.addChallenge(new PassagePathing(2021, 12,1, "2021-d12.txt"));
+        cm.addChallenge(new PassagePathing(2021, 12,2, "2021-d12.txt"));
+
+        cm.runChallenge(2021,12,2);
     }
 }
