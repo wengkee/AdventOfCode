@@ -7,6 +7,8 @@ import java.util.*;
 public class PassagePathing extends Challenge {
 
     private HashMap<String, Node> allNodes;
+    private HashSet<String> allPaths;
+    private int maxVisit = 1;
 
     public PassagePathing(int year, int day, int part, String input) {
         super(year, day, part, input);
@@ -22,8 +24,6 @@ public class PassagePathing extends Challenge {
         getAllPaths();
     }
 
-    private HashSet<String> allPaths;
-    private int maxVisit = 1;
     private void getAllPaths(){
         allPaths = new HashSet<>();
         getPath("start", "start", new HashMap<>());
