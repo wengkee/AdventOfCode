@@ -20,7 +20,8 @@ Java 11
 | ✔ [day 9 Smoke Basin ](java/src/com/wengkee/adventofcode/y2021/day9)            |    🌟    |    🌟    |                      
 | ✔ [day 10 Syntax Scoring ](java/src/com/wengkee/adventofcode/y2021/day10)       |    🌟    |    🌟    |                      
 | ✔ [day 11 Dumbo Octupus ](java/src/com/wengkee/adventofcode/y2021/day11)        |    🌟    |    🌟    |                            
-
+| ✔ [day 12 Passage Pathing ](java/src/com/wengkee/adventofcode/y2021/day12)      |    🌟    |    🌟    |
+| ✔ [day 13 Transparent Origami ](java/src/com/wengkee/adventofcode/y2021/day13)  |    🌟    |    🌟    |
 
 ## [Year 2020](https://adventofcode.com/2020)
 <details>
