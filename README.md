@@ -7,21 +7,22 @@ This is my solution for Advent of Code.
 
 Java 11
 
-| Day                                                                             | Part One | Part Two |
-|---------------------------------------------------------------------------------|:--------:|:--------:|
-| ✔ [Day 1 Sonar Sweeper](java/src/com/wengkee/adventofcode/y2021/day1)           |    🌟    |    🌟    |   
-| ✔ [day 2 Dive!](java/src/com/wengkee/adventofcode/y2021/day2)                   |    🌟    |    🌟    |  
-| ✔ [day 3 Binary Diagnostic](java/src/com/wengkee/adventofcode/y2021/day3)       |    🌟    |    🌟    |  
-| ✔ [day 4 Giant Squid](java/src/com/wengkee/adventofcode/y2021/day4)             |    🌟    |    🌟    |  
-| ✔ [day 5 Hydrothermal Venture](java/src/com/wengkee/adventofcode/y2021/day5)    |    🌟    |    🌟    |  
-| ✔ [day 6 Lanternfish ](java/src/com/wengkee/adventofcode/y2021/day6)            |    🌟    |    🌟    |  
-| ✔ [day 7 The Treachery of Whales](java/src/com/wengkee/adventofcode/y2021/day7) |    🌟    |    🌟    |           
-| ✔ [day 8 Seven Segment Search ](java/src/com/wengkee/adventofcode/y2021/day8)   |    🌟    |    🌟    |                      
-| ✔ [day 9 Smoke Basin ](java/src/com/wengkee/adventofcode/y2021/day9)            |    🌟    |    🌟    |                      
-| ✔ [day 10 Syntax Scoring ](java/src/com/wengkee/adventofcode/y2021/day10)       |    🌟    |    🌟    |                      
-| ✔ [day 11 Dumbo Octupus ](java/src/com/wengkee/adventofcode/y2021/day11)        |    🌟    |    🌟    |                            
-| ✔ [day 12 Passage Pathing ](java/src/com/wengkee/adventofcode/y2021/day12)      |    🌟    |    🌟    |
-| ✔ [day 13 Transparent Origami ](java/src/com/wengkee/adventofcode/y2021/day13)  |    🌟    |    🌟    |
+| Day                                                                                | Part One | Part Two |
+|------------------------------------------------------------------------------------|:--------:|:--------:|
+| ✔ [Day 1 Sonar Sweeper](java/src/com/wengkee/adventofcode/y2021/day1)              |    🌟    |    🌟    |   
+| ✔ [day 2 Dive!](java/src/com/wengkee/adventofcode/y2021/day2)                      |    🌟    |    🌟    |  
+| ✔ [day 3 Binary Diagnostic](java/src/com/wengkee/adventofcode/y2021/day3)          |    🌟    |    🌟    |  
+| ✔ [day 4 Giant Squid](java/src/com/wengkee/adventofcode/y2021/day4)                |    🌟    |    🌟    |  
+| ✔ [day 5 Hydrothermal Venture](java/src/com/wengkee/adventofcode/y2021/day5)       |    🌟    |    🌟    |  
+| ✔ [day 6 Lanternfish ](java/src/com/wengkee/adventofcode/y2021/day6)               |    🌟    |    🌟    |  
+| ✔ [day 7 The Treachery of Whales](java/src/com/wengkee/adventofcode/y2021/day7)    |    🌟    |    🌟    |           
+| ✔ [day 8 Seven Segment Search ](java/src/com/wengkee/adventofcode/y2021/day8)      |    🌟    |    🌟    |                      
+| ✔ [day 9 Smoke Basin ](java/src/com/wengkee/adventofcode/y2021/day9)               |    🌟    |    🌟    |                      
+| ✔ [day 10 Syntax Scoring ](java/src/com/wengkee/adventofcode/y2021/day10)          |    🌟    |    🌟    |                      
+| ✔ [day 11 Dumbo Octupus ](java/src/com/wengkee/adventofcode/y2021/day11)           |    🌟    |    🌟    |                            
+| ✔ [day 12 Passage Pathing ](java/src/com/wengkee/adventofcode/y2021/day12)         |    🌟    |    🌟    |
+| ✔ [day 13 Transparent Origami ](java/src/com/wengkee/adventofcode/y2021/day13)     |    🌟    |    🌟    |
+| ✔ [day 14 Extended Polymerization ](java/src/com/wengkee/adventofcode/y2021/day14) |    🌟    |    🌟    |
 
 ## [Year 2020](https://adventofcode.com/2020)
 <details>
