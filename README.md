@@ -23,6 +23,8 @@ Java 11
 | ✔ [day 12 Passage Pathing ](java/src/com/wengkee/adventofcode/y2021/day12)         |    🌟    |    🌟    |
 | ✔ [day 13 Transparent Origami ](java/src/com/wengkee/adventofcode/y2021/day13)     |    🌟    |    🌟    |
 | ✔ [day 14 Extended Polymerization ](java/src/com/wengkee/adventofcode/y2021/day14) |    🌟    |    🌟    |
+| ✔ [day 15 Chiton ](java/src/com/wengkee/adventofcode/y2021/day15)                  |    🌟    |    🌟    |
+| ✔ [day 16 Packet Decoder ](java/src/com/wengkee/adventofcode/y2021/day16)          |    🌟    |    🌟    |
 
 ## [Year 2020](https://adventofcode.com/2020)
 <details>
