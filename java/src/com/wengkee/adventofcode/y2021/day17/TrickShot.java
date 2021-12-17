@@ -1,6 +1,7 @@
 package com.wengkee.adventofcode.y2021.day17;
 
 import com.wengkee.adventofcode.util.Challenge;
+import com.wengkee.adventofcode.util.Coordinate;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,6 +12,9 @@ import java.util.regex.Pattern;
 
 public class TrickShot extends Challenge {
 
+    private int minX, maxX;
+    private int minY, maxY;
+
     public TrickShot(int year, int day, int part, String input) {
         super(year, day, part, input);
     }
@@ -19,45 +23,38 @@ public class TrickShot extends Challenge {
     public void run() {
         init();
         findVelocity();
-
     }
 
     private void findVelocity(){
 
-        int maxTryY = (minY < 0)? minY * -1 : minY;
-        System.out.println("maxTryY: " + maxTryY);
-        System.out.println("minY: " + minY + ", maxY: " + maxY);
-
-
         int highestY = 0;
         HashSet<String> distinctVelocity = new HashSet<>();
 
-        for (int i = -1000; i < 1000; i++) {
+        for (int i = 1; i < maxX; i++) {
+            for (int j = minY; j < -minY; j++) {
 
-            for (int j = -1000; j < 1000; j++) {
-
-                Coordinate probe = new Coordinate(0,0);
+                ProbeCoordinate probe = new ProbeCoordinate(0,0);
                 Velocity velocity = new Velocity(i, j);
 
-                int maxY = 0;
+                int tmpMaxY = 0;
                 while (!probe.outOfRange()){
                     probe.move(velocity);
-                    maxY = Math.max(probe.y, maxY);
+                    tmpMaxY = Math.max(probe.y, tmpMaxY);
                     if (probe.withinRange()){
-                        highestY = Math.max(highestY, maxY);
+                        highestY = Math.max(highestY, tmpMaxY);
                         distinctVelocity.add(i+","+j);
                     }
                 }
             }
         }
-        System.out.println("highestY: " + highestY);
-        System.out.println("distinct: " + distinctVelocity.size());
+        System.out.println("Highest Y: " + highestY);
+        System.out.println("Distinct Velocity: " + distinctVelocity.size());
     }
 
     private void init(){
         String data = getInputData().get(0);
 
-        Pattern pattern = Pattern.compile(".*x=(\\-?\\d+)..(\\-?\\d+).*y=(\\-?\\d+)..(\\-?\\d+).*");
+        Pattern pattern = Pattern.compile(".*x=(-?\\d+)..(-?\\d+).*y=(-?\\d+)..(-?\\d+).*");
 
         Matcher matcher = pattern.matcher(data);
 
@@ -69,17 +66,10 @@ public class TrickShot extends Challenge {
         }
     }
 
-    private int minX, maxX;
-    private int minY, maxY;
+    private class ProbeCoordinate extends Coordinate{
 
-    private class Coordinate{
-
-        public int x;
-        public int y;
-
-        private Coordinate(int x, int y){
-            this.x = x;
-            this.y = y;
+        public ProbeCoordinate(int x, int y) {
+            super(x, y);
         }
 
         private void move(Velocity velocity){
@@ -97,7 +87,7 @@ public class TrickShot extends Challenge {
         }
     }
 
-    private class Velocity extends Coordinate{
+    private static class Velocity extends Coordinate{
 
         private Velocity(int x, int y) {
             super(x, y);

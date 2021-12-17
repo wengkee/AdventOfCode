@@ -1,6 +1,7 @@
 package com.wengkee.adventofcode.y2021.day15;
 
 import com.wengkee.adventofcode.util.Challenge;
+import com.wengkee.adventofcode.util.Coordinate;
 
 import java.util.*;
 
@@ -20,16 +21,17 @@ public class Chiton extends Challenge {
     }
 
     private HashMap<String, Integer> riskMap;
-    private Queue<Coordinate> queue;
+    private Queue<ChitonCoordinate> queue;
 
     private void findLowestRiskPath(){
 
         riskMap = new HashMap<>();
         queue = new PriorityQueue<>();
-        queue.add(new Coordinate(0, 0, 0));
+        queue.add(new ChitonCoordinate(0, 0, 0));
 
         while (true){
-            Coordinate c = queue.poll();
+            ChitonCoordinate c = queue.poll();
+            assert c != null;
             if (c.x == xSize-1 && c.y == ySize-1) {
                 System.out.println("risk: " + c.risk);
                 break;
@@ -50,9 +52,8 @@ public class Chiton extends Challenge {
         if (riskMap.containsKey(key) && riskMap.get(key) <= newRisk ) return;
 
         riskMap.put(key, newRisk);
-        queue.add(new Coordinate(y, x, newRisk));
+        queue.add(new ChitonCoordinate(y, x, newRisk));
 
-//        System.out.println(key + ", risk: " + newRisk);
     }
 
     private int getRisk(int y, int x){
@@ -86,13 +87,13 @@ public class Chiton extends Challenge {
             for (int y = 0; y < ySize; y++) {
                 for (int x = 0; x < xSize; x++) {
                     newStack[y][x] = riskStack[y][x];
-                    populateX(newStack, new Coordinate(y, x, riskStack[y][x]), 1);
+                    populateX(newStack, new ChitonCoordinate(y, x, riskStack[y][x]), 1);
                 }
             }
 
             for (int y = 0; y < ySize; y++) {
                 for (int x = 0; x < newXSize; x++) {
-                    populateY(newStack, new Coordinate(y, x , newStack[y][x]), 1);
+                    populateY(newStack, new ChitonCoordinate(y, x, newStack[y][x]), 1);
                 }
             }
 
@@ -103,21 +104,21 @@ public class Chiton extends Challenge {
 //        printGrid(riskStack, ySize, xSize);
     }
 
-    private void populateX(int[][] stack, Coordinate c, int cnt){
+    private void populateX(int[][] stack, ChitonCoordinate c, int cnt){
         if (cnt >= 5) return;
         int newRisk = c.risk + 1;
         if (newRisk == 10) newRisk = 1;
-        Coordinate newC = new Coordinate(c.y, (c.x + xSize), newRisk);
+        ChitonCoordinate newC = new ChitonCoordinate(c.y, (c.x + xSize), newRisk);
         stack[newC.y][newC.x] = newC.risk;
         populateX(stack, newC, cnt+1);
     }
 
-    private void populateY(int[][] stack, Coordinate c, int cnt){
+    private void populateY(int[][] stack, ChitonCoordinate c, int cnt){
         if (cnt >= 5) return;
         int newRisk = c.risk + 1;
         if (newRisk == 10) newRisk = 1;
 
-        Coordinate newC = new Coordinate(c.y + ySize, c.x , newRisk);
+        ChitonCoordinate newC = new ChitonCoordinate(c.y + ySize, c.x, newRisk);
         stack[newC.y][newC.x] = newC.risk;
         populateY(stack, newC, cnt+1);
     }
@@ -132,20 +133,17 @@ public class Chiton extends Challenge {
     }
 
 
-    private class Coordinate implements Comparable<Coordinate>{
+    private static class ChitonCoordinate extends Coordinate implements Comparable<ChitonCoordinate>{
 
-        private int x;
-        private int y;
-        private int risk;
+        private final int risk;
 
-        private Coordinate(int y, int x, int risk){
-            this.x = x;
-            this.y = y;
+        private ChitonCoordinate(int y, int x, int risk){
+            super(x, y);
             this.risk = risk;
         }
 
         @Override
-        public int compareTo(Coordinate c) {
+        public int compareTo(ChitonCoordinate c) {
             return this.risk > c.risk ? 1 : -1;
         }
     }
