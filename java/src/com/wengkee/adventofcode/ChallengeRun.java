@@ -13,6 +13,7 @@ import com.wengkee.adventofcode.y2021.day13.TransparentOrigami;
 import com.wengkee.adventofcode.y2021.day14.ExtendedPolymerization;
 import com.wengkee.adventofcode.y2021.day15.Chiton;
 import com.wengkee.adventofcode.y2021.day16.PacketDecoder;
+import com.wengkee.adventofcode.y2021.day17.TrickShot;
 import com.wengkee.adventofcode.y2021.day2.Submarine;
 import com.wengkee.adventofcode.y2021.day3.Diagnostic;
 import com.wengkee.adventofcode.y2021.day4.Bingo;
@@ -87,7 +88,10 @@ public class ChallengeRun {
         cm.addChallenge(new PacketDecoder(2021, 16,1, "2021-d16.txt"));
         cm.addChallenge(new PacketDecoder(2021, 16,2, "2021-d16.txt"));
 
-        cm.runChallenge(2021,16,2);
+        cm.addChallenge(new TrickShot(2021, 17,1, "2021-d17.txt"));
+        cm.addChallenge(new TrickShot(2021, 17,2, "2021-d17.txt"));
+
+        cm.runChallenge(2021,17,2);
 //        cm.runChallenge(2021,14,2);
     }
 }
