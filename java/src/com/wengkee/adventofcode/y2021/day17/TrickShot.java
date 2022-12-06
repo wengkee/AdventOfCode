@@ -42,6 +42,9 @@ public class TrickShot extends Challenge {
                     tmpMaxY = Math.max(probe.y, tmpMaxY);
                     if (probe.withinRange()){
                         highestY = Math.max(highestY, tmpMaxY);
+                        if (tmpMaxY == 14535){
+                            System.out.println(velocity.x + "," + velocity.y +  "," + j +", probe.x: " + probe.x);
+                        }
                         distinctVelocity.add(i+","+j);
                     }
                 }
