@@ -2,9 +2,18 @@
 
 This is my solution for Advent of Code. 
 
+## [Year 2022](https://adventofcode.com/2022)
+
+| Day                                                                             | Part One | Part Two |
+|---------------------------------------------------------------------------------|:--------:|:--------:|
+| ✔ [Day 1 Calorie Counting](java/src/com/wengkee/adventofcode/y2022/day1)        |    🌟    |    🌟    |   
+| ✔ [day 2 Rock Paper Scissors](java/src/com/wengkee/adventofcode/y2022/day2)     |    🌟    |    🌟    |  
+| ✔ [day 3 Rucksack Reorganization](java/src/com/wengkee/adventofcode/y2022/day3) |    🌟    |    🌟    |  
+| ✔ [day 4 Camp Cleanup](java/src/com/wengkee/adventofcode/y2022/day3)                        |        |        |  
+
 
 ## [Year 2021](https://adventofcode.com/2021)
-
+<details>
 Java 11
 
 | Day                                                                                | Part One | Part Two |
@@ -26,6 +35,7 @@ Java 11
 | ✔ [day 15 Chiton ](java/src/com/wengkee/adventofcode/y2021/day15)                  |    🌟    |    🌟    |
 | ✔ [day 16 Packet Decoder ](java/src/com/wengkee/adventofcode/y2021/day16)          |    🌟    |    🌟    |
 | ✔ [day 17 Trick Shot ](java/src/com/wengkee/adventofcode/y2021/day17)              |    🌟    |    🌟    |
+</details>
 
 ## [Year 2020](https://adventofcode.com/2020)
 <details>
