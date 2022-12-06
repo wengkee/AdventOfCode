@@ -25,6 +25,8 @@ import com.wengkee.adventofcode.y2021.day8.SevenSegment;
 import com.wengkee.adventofcode.y2021.day9.SmokeBasin;
 import com.wengkee.adventofcode.y2022.day1.CaloriesProcessor;
 import com.wengkee.adventofcode.y2022.day2.RockPaperScissorProcessor;
+import com.wengkee.adventofcode.y2022.day3.RucksackProcessor;
+import com.wengkee.adventofcode.y2022.day4.CampCleanupProcessor;
 
 public class ChallengeRun {
     public static void main(String[] args) {
@@ -96,12 +98,18 @@ public class ChallengeRun {
 
         // cm.addChallenge(new SnailFish(2021, 18,1, "2021/d18-test.txt"));
 
-        cm.addChallenge(new CaloriesProcessor(2022, 1,1, "2022/2022-d1.txt"));
-        cm.addChallenge(new CaloriesProcessor(2022, 1,2, "2022/2022-d1.txt"));
+//        cm.addChallenge(new CaloriesProcessor(2022, 1,1, "2022/2022-d1.txt"));
+//        cm.addChallenge(new CaloriesProcessor(2022, 1,2, "2022/2022-d1.txt"));
+//
+//        cm.addChallenge(new RockPaperScissorProcessor(2022, 2,1, "2022/2022-d2.txt"));
+//        cm.addChallenge(new RockPaperScissorProcessor(2022, 2,2, "2022/2022-d2.txt"));
+//
+//        cm.addChallenge(new RucksackProcessor(2022, 3,1, "2022/2022-d3-test.txt"));
+//        cm.addChallenge(new RucksackProcessor(2022, 2,2, "2022/2022-d2.txt"));
 
-        cm.addChallenge(new RockPaperScissorProcessor(2022, 2,1, "2022/2022-d2.txt"));
-        cm.addChallenge(new RockPaperScissorProcessor(2022, 2,2, "2022/2022-d2.txt"));
+        cm.addChallenge(new CampCleanupProcessor(2022, 4,1, "2022/2022-d4.txt"));
+        cm.addChallenge(new CampCleanupProcessor(2022, 4,2, "2022/2022-d4.txt"));
 
-        cm.runChallenge(2022,2,2);
+        cm.runChallenge(2022,4,2);
     }
 }

@@ -9,7 +9,7 @@ This is my solution for Advent of Code.
 | ✔ [Day 1 Calorie Counting](java/src/com/wengkee/adventofcode/y2022/day1)        |    🌟    |    🌟    |   
 | ✔ [day 2 Rock Paper Scissors](java/src/com/wengkee/adventofcode/y2022/day2)     |    🌟    |    🌟    |  
 | ✔ [day 3 Rucksack Reorganization](java/src/com/wengkee/adventofcode/y2022/day3) |    🌟    |    🌟    |  
-| ✔ [day 4 Camp Cleanup](java/src/com/wengkee/adventofcode/y2022/day3)                        |        |        |  
+| ✔ [day 4 Camp Cleanup](java/src/com/wengkee/adventofcode/y2022/day3)                        |    🌟    |    🌟    |    
 
 
 ## [Year 2021](https://adventofcode.com/2021)

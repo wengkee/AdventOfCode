@@ -8,7 +8,6 @@ import java.util.List;
 public class RucksackProcessor extends Challenge {
 
     private List<Integer> ls = new ArrayList<>();
-    private List<String> inputData = getInputData();
 
     public RucksackProcessor(int year, int day, int part, String input) {
         super(year, day, part, input);
@@ -28,7 +27,7 @@ public class RucksackProcessor extends Challenge {
     private void checkPrioritiesSum() {
 
         int sum = 0;
-        for (String s : inputData) {
+        for (String s : getInputData()) {
             String[] parts = {s.substring(0, s.length() / 2), s.substring(s.length() / 2)};
 
             for (int i = 0; i < parts[0].length(); i++) {
@@ -48,7 +47,7 @@ public class RucksackProcessor extends Challenge {
 
         int sum = 0, cnt = 0;
         List<String> ls = new ArrayList<>();
-        for (String s : inputData) {
+        for (String s : getInputData()) {
 
             ls.add(s);
             cnt++;
