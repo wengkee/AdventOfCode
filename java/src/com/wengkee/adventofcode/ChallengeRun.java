@@ -28,6 +28,7 @@ import com.wengkee.adventofcode.y2022.day2.RockPaperScissorProcessor;
 import com.wengkee.adventofcode.y2022.day3.RucksackProcessor;
 import com.wengkee.adventofcode.y2022.day4.CampCleanupProcessor;
 import com.wengkee.adventofcode.y2022.day5.SupplyStackProcessor;
+import com.wengkee.adventofcode.y2022.day6.TuningTroubleProcessor;
 
 public class ChallengeRun {
     public static void main(String[] args) {
@@ -114,8 +115,11 @@ public class ChallengeRun {
         cm.addChallenge(new SupplyStackProcessor(2022, 5,1, "2022/2022-d5.txt"));
         cm.addChallenge(new SupplyStackProcessor(2022, 5,2, "2022/2022-d5.txt"));
 
+        cm.addChallenge(new TuningTroubleProcessor(2022, 6,1, "2022/2022-d6.txt"));
+        cm.addChallenge(new TuningTroubleProcessor(2022, 6,2, "2022/2022-d6.txt"));
 
 
-        cm.runChallenge(2022,5,2);
+
+        cm.runChallenge(2022,6,2);
     }
 }

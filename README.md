@@ -10,7 +10,8 @@ This is my solution for Advent of Code.
 | ✔ [day 2 Rock Paper Scissors](java/src/com/wengkee/adventofcode/y2022/day2)     |    🌟    |    🌟    |  
 | ✔ [day 3 Rucksack Reorganization](java/src/com/wengkee/adventofcode/y2022/day3) |    🌟    |    🌟    |  
 | ✔ [day 4 Camp Cleanup](java/src/com/wengkee/adventofcode/y2022/day4)            |    🌟    |    🌟    |    
-| ✔ [day 5 Supply Stacks](java/src/com/wengkee/adventofcode/y2022/day5)                        |    🌟    |    🌟    |
+| ✔ [day 5 Supply Stacks](java/src/com/wengkee/adventofcode/y2022/day5)           |    🌟    |    🌟    |
+| ✔ [day 6 Tuning Trouble](java/src/com/wengkee/adventofcode/y2022/day6)           |    🌟    |    🌟    |
 
 
 ## [Year 2021](https://adventofcode.com/2021)
