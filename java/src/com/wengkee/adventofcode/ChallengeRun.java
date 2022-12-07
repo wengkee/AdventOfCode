@@ -27,6 +27,7 @@ import com.wengkee.adventofcode.y2022.day1.CaloriesProcessor;
 import com.wengkee.adventofcode.y2022.day2.RockPaperScissorProcessor;
 import com.wengkee.adventofcode.y2022.day3.RucksackProcessor;
 import com.wengkee.adventofcode.y2022.day4.CampCleanupProcessor;
+import com.wengkee.adventofcode.y2022.day5.SupplyStackProcessor;
 
 public class ChallengeRun {
     public static void main(String[] args) {
@@ -110,6 +111,11 @@ public class ChallengeRun {
         cm.addChallenge(new CampCleanupProcessor(2022, 4,1, "2022/2022-d4.txt"));
         cm.addChallenge(new CampCleanupProcessor(2022, 4,2, "2022/2022-d4.txt"));
 
-        cm.runChallenge(2022,4,2);
+        cm.addChallenge(new SupplyStackProcessor(2022, 5,1, "2022/2022-d5.txt"));
+        cm.addChallenge(new SupplyStackProcessor(2022, 5,2, "2022/2022-d5.txt"));
+
+
+
+        cm.runChallenge(2022,5,2);
     }
 }
