@@ -10,8 +10,6 @@ import java.util.regex.Pattern;
 
 public class SupplyStackProcessor extends Challenge {
 
-    private List<Integer> ls = new ArrayList<>();
-
     public SupplyStackProcessor(int year, int day, int part, String input) {
         super(year, day, part, input);
     }

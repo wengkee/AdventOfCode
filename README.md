@@ -11,12 +11,13 @@ This is my solution for Advent of Code.
 | ✔ [day 3 Rucksack Reorganization](java/src/com/wengkee/adventofcode/y2022/day3) |    🌟    |    🌟    |  
 | ✔ [day 4 Camp Cleanup](java/src/com/wengkee/adventofcode/y2022/day4)            |    🌟    |    🌟    |    
 | ✔ [day 5 Supply Stacks](java/src/com/wengkee/adventofcode/y2022/day5)           |    🌟    |    🌟    |
-| ✔ [day 6 Tuning Trouble](java/src/com/wengkee/adventofcode/y2022/day6)           |    🌟    |    🌟    |
+| ✔ [day 6 Tuning Trouble](java/src/com/wengkee/adventofcode/y2022/day6)          |    🌟    |    🌟    |
+| ✔ [day 7 No Space Left On Device](java/src/com/wengkee/adventofcode/y2022/day7) |    🌟    |    🌟    |
 
 
 ## [Year 2021](https://adventofcode.com/2021)
 <details>
-Java 11
+<summary>Java 11</summary>
 
 | Day                                                                                | Part One | Part Two |
 |------------------------------------------------------------------------------------|:--------:|:--------:|
