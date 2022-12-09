@@ -9,6 +9,7 @@ import com.wengkee.adventofcode.y2022.day5.SupplyStackProcessor;
 import com.wengkee.adventofcode.y2022.day6.TuningTroubleProcessor;
 import com.wengkee.adventofcode.y2022.day7.NoSpaceLeftOnDevice;
 import com.wengkee.adventofcode.y2022.day8.TreeHouse;
+import com.wengkee.adventofcode.y2022.day9.RobeBridge;
 
 public class ChallengeRun {
     public static void main(String[] args) {
@@ -39,6 +40,9 @@ public class ChallengeRun {
         cm.addChallenge(new TreeHouse(2022, 8,1, "2022/2022-d8.txt"));
         cm.addChallenge(new TreeHouse(2022, 8,2, "2022/2022-d8.txt"));
 
-        cm.runChallenge(2022,8,2);
+        cm.addChallenge(new RobeBridge(2022, 9,1, "2022/2022-d9.txt"));
+        cm.addChallenge(new RobeBridge(2022, 9,2, "2022/2022-d9.txt"));
+
+        cm.runChallenge(2022,9,2);
     }
 }
