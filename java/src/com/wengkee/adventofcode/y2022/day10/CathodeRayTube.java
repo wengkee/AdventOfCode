@@ -20,6 +20,7 @@ public class CathodeRayTube extends Challenge {
         }
 
         if (getPart() == 2) {
+            getSignalStrength();
         }
     }
 
@@ -35,30 +36,45 @@ public class CathodeRayTube extends Challenge {
             }
 
             if ( s.startsWith("addx") ){
-                increaseCycle(2);
                 int v = Integer.parseInt(s.split(" ")[1]);
-                x += v;
+                increaseCycle(2);
+                increaseX(v);
             }
         }
         System.out.println(sumOfSignalStrength);
 
     }
 
+    int pixel = 0;
     private void increaseCycle(int n){
         for (int i = 0; i < n; i++) {
             cycle ++;
+
+            int gap = pixel - x;
+            if(gap >= -1 && gap <= 1){
+                System.out.print("#");
+            } else {
+                System.out.print(".");
+            }
+            increasePixel();
+
             if (cycle == 20 || (cycle - 20) % 40 == 0 ){
                 int signalStr = cycle * x;
                 sumOfSignalStrength += signalStr;
-                System.out.println("MILESTONE::cycle: " + cycle + ", signalStr: " + signalStr);
             }
-//            debug();
         }
     }
 
     private void increaseX(int v){
         x += v;
+    }
 
+    private void increasePixel(){
+        pixel++;
+        if (pixel == 40){
+            pixel = 0;
+            System.out.println("");
+        }
     }
 
     private void debug(){
