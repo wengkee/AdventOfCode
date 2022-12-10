@@ -72,6 +72,7 @@ This is my solution for Advent of Code.
 | ✔ [day 9 Encoding Error](java/src/com/wengkee/adventofcode/y2020/day9)   |    🌟    |    🌟    |
 | ❌ day 10                                                                 |    🚫    |    🚫    |
 | ✔ [day 11 Seat Planning](java/src/com/wengkee/adventofcode/y2020/day11)  |    🌟    |    🌟    |
+| ✔ [day 12 Rain Risk](java/src/com/wengkee/adventofcode/y2020/day12)      |    🌟    |    🌟    |
 
 </details>
 

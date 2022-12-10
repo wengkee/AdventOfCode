@@ -15,13 +15,7 @@ public class CathodeRayTube extends Challenge {
 
     @Override
     public void run() {
-        if (getPart() == 1) {
-            getSignalStrength();
-        }
-
-        if (getPart() == 2) {
-            getSignalStrength();
-        }
+        getSignalStrength();
     }
 
     int x = 1, cycle = 0, sumOfSignalStrength = 0;

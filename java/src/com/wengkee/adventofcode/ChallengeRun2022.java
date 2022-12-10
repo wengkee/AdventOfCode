@@ -12,7 +12,7 @@ import com.wengkee.adventofcode.y2022.day7.NoSpaceLeftOnDevice;
 import com.wengkee.adventofcode.y2022.day8.TreeHouse;
 import com.wengkee.adventofcode.y2022.day9.RobeBridge;
 
-public class ChallengeRun {
+public class ChallengeRun2022 {
     public static void main(String[] args) {
 
         ChallengeManager cm = new ChallengeManager();
