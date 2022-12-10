@@ -2,6 +2,7 @@ package com.wengkee.adventofcode;
 
 import com.wengkee.adventofcode.util.ChallengeManager;
 import com.wengkee.adventofcode.y2022.day1.CaloriesProcessor;
+import com.wengkee.adventofcode.y2022.day10.CathodeRayTube;
 import com.wengkee.adventofcode.y2022.day2.RockPaperScissorProcessor;
 import com.wengkee.adventofcode.y2022.day3.RucksackProcessor;
 import com.wengkee.adventofcode.y2022.day4.CampCleanupProcessor;
@@ -43,6 +44,9 @@ public class ChallengeRun {
         cm.addChallenge(new RobeBridge(2022, 9,1, "2022/2022-d9.txt"));
         cm.addChallenge(new RobeBridge(2022, 9,2, "2022/2022-d9.txt"));
 
-        cm.runChallenge(2022,9,2);
+        cm.addChallenge(new CathodeRayTube(2022, 10,1, "2022/2022-d10.txt"));
+        cm.addChallenge(new CathodeRayTube(2022, 10,2, "2022/2022-d10-test.txt"));
+
+        cm.runChallenge(2022,10,1);
     }
 }
