@@ -3,6 +3,7 @@ package com.wengkee.adventofcode;
 import com.wengkee.adventofcode.util.ChallengeManager;
 import com.wengkee.adventofcode.y2022.day1.CaloriesProcessor;
 import com.wengkee.adventofcode.y2022.day10.CathodeRayTube;
+import com.wengkee.adventofcode.y2022.day11.MonkeyInTheMiddle;
 import com.wengkee.adventofcode.y2022.day2.RockPaperScissorProcessor;
 import com.wengkee.adventofcode.y2022.day3.RucksackProcessor;
 import com.wengkee.adventofcode.y2022.day4.CampCleanupProcessor;
@@ -47,6 +48,9 @@ public class ChallengeRun2022 {
         cm.addChallenge(new CathodeRayTube(2022, 10,1, "2022/2022-d10.txt"));
         cm.addChallenge(new CathodeRayTube(2022, 10,2, "2022/2022-d10-test.txt"));
 
-        cm.runChallenge(2022,10,1);
+        cm.addChallenge(new MonkeyInTheMiddle(2022, 11,1, "2022/2022-d11-test.txt"));
+        cm.addChallenge(new MonkeyInTheMiddle(2022, 11,2, "2022/2022-d11-test.txt"));
+
+        cm.runChallenge(2022,11,1);
     }
 }
