@@ -5,7 +5,6 @@ import com.wengkee.adventofcode.util.Challenge;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
-import java.awt.*;
 import java.util.*;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -25,30 +24,58 @@ public class MonkeyInTheMiddle extends Challenge {
     HashMap<Integer, Monkey> monkeyList = new HashMap<>();
     private void getMonkeyBusiness() {
         init();
-        execRound(1);
+        if (getPart() == 1) execRound(20, 3);
+        if (getPart() == 2) execRound(10000, 1);
     }
 
-    private void execRound(int round){
+    private void execRound(int round, long reduction){
+
         for (int i = 0; i < round; i++) {
+//            System.out.println(i);
 
-            Set<Integer> listOfMonkeys = monkeyList.keySet();
+            List<Integer> listOfMonkeys = new ArrayList<>(monkeyList.keySet());
+            Collections.sort(listOfMonkeys);
 
-            for (Monkey monkey : monkeyList.values()){
-                for (Item item : monkey.itemList){
-                    item.eval(monkey.instruction);
-                    item.reduceWorry();
-                    if (item.worry % monkey.modulus == 0){
+            for (int id : listOfMonkeys){
 
+                Monkey m = monkeyList.get(id);
+
+                for (Iterator<Item> it = m.itemList.iterator(); it.hasNext(); ){
+                    Item item = it.next();
+                    item.eval(m.instruction);
+                    item.reduceWorry(reduction);
+                    item.manageWorry();
+                    m.inspected++;
+                    if (item.worry % m.modulus == 0){
+                        updateMap(m.ifTrue, item);
+                    } else {
+                        updateMap(m.ifFalse, item);
                     }
+                    it.remove();
                 }
+
             }
         }
+
+        List<Long> mostActiveLs = new ArrayList<>();
+        for ( int id : monkeyList.keySet()){
+            Monkey monkey = monkeyList.get(id);
+            mostActiveLs.add(monkey.inspected);
+        }
+        Collections.sort(mostActiveLs);
+        Collections.reverse(mostActiveLs);
+
+        System.out.println("\nAnswer: " + mostActiveLs.get(0)*mostActiveLs.get(1));
+    }
+
+    private void updateMap(int monkeyId, Item item){
+        Monkey monkey = monkeyList.get(monkeyId);
+        monkey.itemList.add(item);
     }
 
     private void init(){
 
         Monkey monkey = new Monkey();;
-
 
         for (int i = 0; i < getInputData().size(); i++) {
             String s = getInputData().get(i).trim();
@@ -61,6 +88,7 @@ public class MonkeyInTheMiddle extends Challenge {
                 String[] parts = s.split(":")[1].split(",");
                 for (String part : parts){
                     Item item = new Item(part.trim());
+//                    monkey.itemList.add(item);
                     monkey.itemList.add(item);
                 }
             }
@@ -88,10 +116,13 @@ public class MonkeyInTheMiddle extends Challenge {
             }
         }
 
-//        for (Monkey m : monkeyList){
-//            m.print();
-//        }
+        for (int id : monkeyList.keySet()){
+            bigMod *= monkeyList.get(id).modulus;
+        }
+        System.out.println(bigMod);
     }
+
+    int bigMod = 1;
 
     private int extractLastNum(String s, String pattern){
         Pattern r = Pattern.compile(pattern);
@@ -109,6 +140,7 @@ public class MonkeyInTheMiddle extends Challenge {
         int modulus;
         int ifTrue;
         int ifFalse;
+        long inspected = 0;
         String instruction;
 
         public Monkey() {
@@ -127,32 +159,53 @@ public class MonkeyInTheMiddle extends Challenge {
             System.out.println("modulus: " +modulus);
             System.out.println("true: " +ifTrue);
             System.out.println("false: " +ifFalse);
+            System.out.println("inspected: " +inspected);
         }
     }
 
     private class Item{
-        int worry;
-        ScriptEngineManager manager = new ScriptEngineManager();
-        ScriptEngine engine = manager.getEngineByName("js");
+
+        long worry;
+
+//        ScriptEngineManager manager = new ScriptEngineManager();
+//        ScriptEngine engine = manager.getEngineByName("js");
 
         Item(String worry) {
             this.worry = Integer.parseInt(worry);
         }
 
-        void reduceWorry(){
-            worry = Math.floorDiv(worry, 3) ;
-            System.out.println(worry);
+        void reduceWorry(long reduction){
+            worry = Math.floorDiv(worry, reduction) ;
+        }
+
+        void manageWorry(){
+            worry %= bigMod;
         }
 
         void eval(String instruction){
+
             instruction = instruction.replaceAll("old", "" + worry);
-            try{
-                Object result = engine.eval(instruction);
-                worry = (int) result;
-                System.out.println(worry);
-            } catch (ScriptException e ){
-                System.out.println(e);
+            String[] parts = instruction.split(" ");
+
+            if (parts[1].equals("+")){
+                worry = Long.parseLong(parts[0]) + Long.parseLong(parts[2]);
+            } else if (parts[1].equals("*")){
+                worry = Long.parseLong(parts[0]) * Long.parseLong(parts[2]);
             }
+
+
+//            try{
+//                Object result = engine.eval(instruction);
+//
+//                if (result instanceof Integer){
+//                    worry = (int) result;
+//                } else if ( result instanceof Double){
+//                    worry = (long) ( (double) result);
+//                }
+//
+//            } catch (ScriptException e ){
+//                System.out.println(e);
+//            }
         }
 
     }

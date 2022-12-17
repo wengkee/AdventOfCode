@@ -15,6 +15,8 @@ This is my solution for Advent of Code.
 | ✔ [day 7 No Space Left On Device](java/src/com/wengkee/adventofcode/y2022/day7) |    🌟    |    🌟    |
 | ✔ [day 8 Tree Top Tree House](java/src/com/wengkee/adventofcode/y2022/day8)     |    🌟    |    🌟    |
 | ✔ [day 9 Rope Bridge](java/src/com/wengkee/adventofcode/y2022/day9)             |    🌟    |    🌟    |
+| ✔ [day 10 Cathode Ray Tube](java/src/com/wengkee/adventofcode/y2022/day10)      |    🌟    |    🌟    |
+| ✔ [day 11 Monkey in The Middle](java/src/com/wengkee/adventofcode/y2022/day11)  |    🌟    |    🌟    |
 
 
 ## [Year 2021](https://adventofcode.com/2021)

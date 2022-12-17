@@ -48,8 +48,8 @@ public class ChallengeRun2022 {
         cm.addChallenge(new CathodeRayTube(2022, 10,1, "2022/2022-d10.txt"));
         cm.addChallenge(new CathodeRayTube(2022, 10,2, "2022/2022-d10-test.txt"));
 
-        cm.addChallenge(new MonkeyInTheMiddle(2022, 11,1, "2022/2022-d11-test.txt"));
-        cm.addChallenge(new MonkeyInTheMiddle(2022, 11,2, "2022/2022-d11-test.txt"));
+        cm.addChallenge(new MonkeyInTheMiddle(2022, 11,1, "2022/2022-d11.txt"));
+        cm.addChallenge(new MonkeyInTheMiddle(2022, 11,2, "2022/2022-d11.txt"));
 
         cm.runChallenge(2022,11,1);
     }
